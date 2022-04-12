@@ -2,6 +2,7 @@
     --the-purple: hsl(252, 79%, 53%);
     --the-pink: hsl(337, 68%, 65%);
     --btn-red: hsl(6, 78%, 57%);
+    --lite-pink: hsla(337, 68%, 65%, .6);
 }
 
 *::before, *, *::after{
@@ -21,20 +22,21 @@ body {
 }
 
 .container {
-    width: 90rem;
-    /* height: 75%; */
+    width: 88rem;
     background-color: #fff;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 div.leftSide {
-    width: 47.5%;
+    width: 46.75%;
     background-color: var(--the-pink);
     border-radius: inherit;
-    padding: 2.2rem;
-    position: relative;
+    padding: 2.25rem 2rem;
+    position: absolute;
+    left: 0;
     box-shadow: 0 12px 30px rgba(0, 0, 0, .5);
 }
 
@@ -44,17 +46,18 @@ div.leftSide > img {
 }
 
 div.leftSide > p {
-    font-size: 29rem;
+    font-size: 30rem;
     line-height: calc(1em - ((20 / 100) * 1em));
     text-align: center;
     color: rgba(255, 255, 255, .25);
     font-weight: 500;
-    margin: 1.5rem 1.25rem 0;
+    margin: 1.5rem 1.25rem 1.25rem;
     display: inline-block;
+    pointer-events: none;
 }
 
 div.leftSide > div.leftBottom {
-    margin: 75% 0 5%;
+    margin: 65% 0 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,6 +69,7 @@ div.leftSide > div.leftBottom > span {
     background-color: #fff;
     opacity: .5;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 div.leftSide > div.leftBottom > span:hover {
@@ -79,8 +83,8 @@ div.leftSide > div.leftBottom > span:not(:first-of-type, :last-of-type) {
 
 div.leftSide > div.shoe {
     position: absolute;
-    left: -25%;
-    bottom: 8%;
+    left: -24%;
+    bottom: 7%;
 }
 
 div.leftSide > div.shoe > img:first-of-type {
@@ -94,6 +98,7 @@ div.leftSide > div.shoe > img:not(:first-of-type) {
     width: 3rem;
     height: auto;
     padding: .5rem;
+    cursor: pointer;
 }
 
 div.leftSide > div.shoe > img:not(:first-of-type):hover {
@@ -116,23 +121,22 @@ div.leftSide > div.shoe > img:nth-last-child(3) {
 }
 
 div.rightSide {
-    padding: 0 4rem;
-    /* box-sizing: content-box; */
+    padding: 5.5rem 4rem 5.5rem 51%;
 }
 
 div.rightSide > p:first-of-type {
     font-size: 4.25rem;
     font-weight: 900;
-    /* display: inline-block; */
-    /* margin-top: 7rem; */
+    pointer-events: none;
 }
 
 div.rightSide > p:nth-of-type(2) {
     display: flex;
     align-items: center;
-    font-size: 2.25rem;
+    font-size: 2.125rem;
     width: max-content;
-    margin: 1.5rem 0 1.6rem;
+    margin: .5rem 0;
+    pointer-events: none;
 }
 
 div.rightSide > p:nth-of-type(2) > span:last-of-type {
@@ -144,9 +148,10 @@ div.rightSide > p:nth-of-type(2) > span:last-of-type {
 
 div.rightSide > p:nth-of-type(3) {
     display: inline-block;
-    font-size: 1.475rem;
+    font-size: 1.375rem;
     line-height: 1.4;
-    margin: 1.25rem 0 3.75rem;
+    margin: 2.25rem 0 3.75rem;
+    pointer-events: none;
 }
 
 div.rightSide > p:nth-of-type(4) {
@@ -160,6 +165,7 @@ div.rightSide > p:nth-of-type(4) {
 
 div.rightSide > p:nth-of-type(4) > span:first-of-type {
     margin-right: 4.5rem;
+    pointer-events: none;
 }
 
 div.rightSide > p:nth-of-type(4) > span:last-of-type {
@@ -191,6 +197,7 @@ div.rightSide > p:nth-of-type(4) > span:last-of-type > span > label {
     right: 0;
     border: 3px solid transparent;
     border-radius: calc(2 * 1em);
+    cursor: pointer;
 }
 
 div.rightSide > p:nth-of-type(4) > span:last-of-type > span > input[type=radio] {
@@ -200,7 +207,7 @@ div.rightSide > p:nth-of-type(4) > span:last-of-type > span > input[type=radio] 
 }
 
 div.rightSide > p:nth-of-type(4) > span:last-of-type > span > input[type=radio]:checked ~ label {
-    border: 3px solid var(--the-pink);
+    border: 2px solid var(--the-pink);
 }
 
 div.rightSide > p:last-of-type {
@@ -212,40 +219,56 @@ div.rightSide > p:last-of-type {
 }
 
 div.rightSide > p:last-of-type > span:first-of-type {
-    margin-right: 3rem;
+    margin-right: 4.5rem;
     text-align: center;
+    pointer-events: none;
 }
 
 div.rightSide > p:last-of-type > span:last-of-type {
     font-size: 2.5rem;
     font-weight: 300;
     color: black;
-    padding: 0 1.5rem 0;
     position: relative;
+    cursor: default;
 }
 
 div.rightSide > p:last-of-type > span:last-of-type::before {
-    content: url(./img/left.svg);
+    content: "";
     position: absolute;
-    left: -10px;
-    bottom: -5px;
+    width: 0rem;
+    height: 0rem;
+    border: 5px solid;
+    border-color: transparent transparent var(--the-pink) var(--the-pink);
+    transform: rotate(45deg);
+    left: -1.125rem;
+    bottom: calc(1em/3);
+    cursor: pointer;
 }
 
 div.rightSide > p:last-of-type > span:last-of-type::after {
-    content: url(./img/right.svg);
+    content: "";
     position: absolute;
-    right: -10px;
-    bottom: -5px;
+    width: 0rem;
+    height: 0rem;
+    border: 5px solid;
+    border-color: var(--the-pink) var(--the-pink) transparent transparent;
+    transform: rotate(45deg);
+    right: -1.125rem;
+    bottom: calc(1em/3);
+    cursor: pointer;
 }
 
-div.rightSide > p:last-of-type > span:last-of-type::after:hover, 
-span:last-of-type::after:hover {
-    filter:opacity(.5);
+div.rightSide > p:last-of-type > span:last-of-type:hover::before {
+    border-color: transparent transparent var(--lite-pink) var(--lite-pink);
+}
+div.rightSide > p:last-of-type > span:last-of-type:hover::after {
+    border-color: var(--lite-pink) var(--lite-pink) transparent transparent;
 }
 
 div.rightSide > button {
     display: block;
     border: none;
+    outline: none;
     background-color: var(--btn-red);
     color: white;
     font-size: 2rem;
@@ -253,7 +276,8 @@ div.rightSide > button {
     padding: 1.5rem 10rem;
     border-radius: 5px;
     box-shadow: 0 10px 20px var(--btn-red);
-    margin: 3rem 0 0;
+    margin: 3.125rem 0 0;
+    cursor: pointer;
 }
 
 div.rightSide > button:hover {
