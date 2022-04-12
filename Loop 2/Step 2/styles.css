@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #2f2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', 'cursive' !important;
+}
+body > .container{
+    width: 32.6%;
+    height: 90%;
+    padding: 75px 75px 37.5px;
+    background: #fdec51;
+    position: relative;
+}
+body > .container > .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 65px;
+}
+body > .container > .heading > h1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    height: 35px;
+    margin: 0;
+}
+body > .container > .heading > img{
+    width: 30px;
+    height: 30px;
+    opacity: .5;
+}
+body > .container > .heading > img:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: .4s;
+}
+body > .container > .bottom > .container{
+    width: 27%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 37.5px;
+    right: 75px;
+}
+body > .container > .bottom > .container > h1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 35px;
+    height: 35px;
+    margin: 0;
+    opacity: .5;
+}
+body > .container > .bottom > .container > h1:hover{
+    cursor: pointer;
+    opacity: 1;
+    transition: .4s;
+}
+body > .container > .content{
+    width: 100%;
+    height: 66%;
+    position: absolute;
+    background: #ffffff;
+    box-shadow: -10px 10px 30px -20px;
+    padding: 80px 50px 40px;
+}
+body > .container > .content > .inner-content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* box-shadow: inset 0px 0px 1px 1px red; */
+    /* border: 1px solid red; */
+}
+.inner-content > * > * {
+    /* border: 1px solid red; */
+
+}
+body > .container > .content > .inner-content > img{
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+}
+body > .container > .content > .inner-content > div{
+    width: 100%;
+}
+body > .container > .content > .inner-content > div > h1{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    height: 15px;
+    color: rgba(128, 128, 128, .75);
+}
+::placeholder{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    height: 18px;
+    color: rgba(128, 128, 128, 1);
+}
+body > .container > .content > .inner-content > div:nth-child(-n+4){
+    margin-bottom: 30px;
+}
+body > .container > .content > .inner-content > div > input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 0;
+    font-size: 18px;
+    line-height: 20px;
+}
+input:focus{
+    outline: none;
+}
+body > .container > .content > .inner-content > div > div > h1{
+    margin: 0;margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 15px;
+    height: 15px;
+    color: rgba(128, 128, 128, .75);
+}
+body > .container > .content > .inner-content > div > div > input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding: 0;
+    font-size: 18px;
+    line-height: 20px;
+}
+body > .container > .content > .inner-content > div > textarea{
+    max-width: 100%;
+    max-height: 126px;
+    min-width: 100%;
+    min-height: 126px;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    resize: vertical;
+    font-size: 18px;
+    line-height: 20px;
+}
+body > .container > .content > .inner-content > div > textarea:focus{
+    outline: none;
+}
+textarea::-webkit-scrollbar{
+    width: 5px;
+}
+textarea::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, .05);
+}
+textarea::-webkit-scrollbar-thumb{
+  background-color: rgba(0, 0, 0, .2);
+}
+textarea::-webkit-scrollbar-thumb:hover{
+    background: rgba(0, 0, 0, .5);
+}
+textarea::-webkit-scrollbar-thumb:active{
+    background: rgba(0, 0, 0, .7);
+}

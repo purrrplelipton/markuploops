@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    /* box-shadow: inset 0 0 1px red; */
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    background: transparent;
+    font-family: 'Roboto', sans-serif !important;
+    overflow: overlay;
+}
+body > .container > .top{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 1);
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+body > .container > .top > .top-content{
+    width: 67.5%;
+    margin: auto;
+}
+body > .container > .top > .image > img{
+    background: transparent;
+    width: 800px;
+    position: absolute;
+    right: -19%;
+    bottom: 0;
+    /* opacity: .075; */
+}
+body > .container > .top > .top-content > .nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+body > .container > .top > .top-content > .nav-bar > div > img{
+    width: 32px;
+}
+body > .container > .top > .top-content > .nav-bar > .nav-links > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 510px;
+    justify-content: space-between;
+    align-items: center;
+}
+body > .container > .top > .top-content > .nav-bar > .nav-links > ul > li:nth-child(-n+3):hover{
+    border-bottom: 2px solid rgba(0, 0, 0, .6);
+    cursor: pointer;
+    transition: .4s;
+    color: rgba(0, 0, 0, 1);
+}
+body > .container > .top > .top-content > .nav-bar > .nav-links > ul > li{
+    font-size: 16px;
+    height: 32px;
+    line-height: 18px;
+    font-weight: 500;
+    color: rgba(128, 128, 128, .7);
+    margin: 0;
+    /* margin-right: 60px; */
+}
+body > .container > .top > .top-content > .nav-bar > .nav-links > ul > li > input{
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-bottom: 2px solid rgba(128, 128, 128, .7);
+    font-size: 16px;
+    width: 175px;
+    height: 25px;
+    line-height: 18px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .8);
+    outline: none;
+    padding-bottom: 5px;
+}
+body > .container > .top > .top-content > .nav-bar > .nav-links > ul > li > input:focus{
+    border-bottom: 2px solid rgba(0, 0, 0, .6);
+    transition: .4s;
+}
+body > .container > .top > .top-content > .nav-bar > .nav-links > ul > li > input::placeholder{
+    font-size: 16px;
+    height: 18px;
+    line-height: 18px;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 1);
+    margin: 0;
+}
+body > .container > .top > .top-content > .freedom{
+    width: 50%;
+    height: 600px;
+    margin-top: 150px;
+}
+body > .container > .top > .top-content > .freedom > .ting{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+body > .container > .top > .top-content > .freedom > .ting >._frdm{
+    font-size: 50px;
+    height: 52px;
+    line-height: 52px;
+    margin: 0;
+    margin-bottom: 27.5px;
+    font-weight: 700;
+}
+body > .container > .top > .top-content > .freedom > .ting > p{
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0;
+    width: 480px;
+    font-weight: 500;
+    color: rgba(128, 128, 128, .7);
+    padding-left: 47px;
+    border-left: 2px solid rgba(0, 0, 0, .6);
+    margin-top: 37.5px;
+    margin-bottom: 25px;
+}
+body > .container > .top > .top-content > .freedom > .ting > .kynt-btn{
+    width: 206px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    background: rgba(234, 98, 92, 1);
+    margin-top: 25px;
+    cursor: pointer;
+}
+body > .container > .top > .top-content > .freedom > .ting > .kynt-btn:hover{
+    background: rgb(216, 75, 68);
+    transition: .3s;
+}
+body > .container > .top > .top-content > .freedom > .ting > .kynt-btn > span{
+    font-size: 15px;
+    height: 17px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 17px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+body > .container > .mid-shit{
+    width: 100vw;
+    background: rgba(255, 255, 255, 1);
+    margin: 0;
+    margin-bottom: 35px;
+    padding-top: 55px;
+    padding-bottom: 35px;
+    overflow: hidden;
+    /* border-bottom: 1px solid gray; */
+    
+}
+body > .container > .mid-shit > .mid-shit_content{
+    width: 67.5%;
+    margin: auto;
+
+}
+body > .container > .mid-shit > .mid-shit_content > .features{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 75px;
+}
+body > .container > .mid-shit > .mid-shit_content > .features > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+body > .container > .mid-shit > .mid-shit_content > .features > div > h1{
+    font-size: 18px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+body > .container > .mid-shit > .mid-shit_content > .features > div > p{
+    font-size: 15px;
+    line-height: 27.5px;
+    width: 287.5px;
+    margin: 0;
+    margin-top: 25px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .85);
+}
+body > .container > .mid-shit > .mid-shit_content > .features > div > span{
+    font-size: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0;
+    font-family: sans-serif !important;
+    letter-spacing: 2px;
+    text-align: right;
+    margin-top: -17.5px;
+    margin-left: -3px;
+    color: rgba(128, 128, 128, .7);
+}
+body > .container > .mid-shit > .mid-shit_content > .features > .feature2 > p{
+    width: 304px;
+}
+body > .container > .mid-shit > .mid-shit_content > .features > .feature3 > p{
+    width: 280px;
+    margin-bottom: 6px;
+}
+body > .container > .mid-shit > .mid-shit_content > .features > .feature3 > div > button{
+    width: 140px;
+    height: 30px;
+    padding: 0;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-top: 6px;
+}
+body > .container > .mid-shit > .mid-shit_content > .features > .feature3 > div > button:hover{
+    width: 155px;
+    transition: .4s;
+}
+body > .container > .mid-shit > .mid-shit_content > .features > .feature3 > div > button > h1{
+    border-bottom: 2px solid rgb(216, 75, 68);
+    font-size: 2px;
+    width: auto;
+    height: 2px;
+    line-height: 2px;
+    margin: 0;
+    text-align: right;
+}
+body > .container > .mid-shit > .mid-shit_content > .features > .feature3 > div > button > h1 > span{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    color:rgb(216, 75, 68);
+    padding-left: 14px;
+    height: 16px;
+    line-height: 4px;
+    text-align: center;
+    background: white;
+}
+body > .container > .mid-shit > .mid-shit_content > .preview{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 75px;
+}
+body > .container > .mid-shit > .mid-shit_content > .preview > img{
+    width: 43%;
+}
+body > .container > .mid-shit > .mid-shit_content > .preview > .nike-band{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 480px;
+}
+body > .container > .mid-shit > .mid-shit_content > .preview > .nike-band > h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 27.5px;
+    font-weight: 700;
+    max-width: 420px;
+}
+body > .container > .mid-shit > .mid-shit_content > .preview > .nike-band > p{
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0;
+    width: 480px;
+    font-weight: 500;
+    color: rgba(128, 128, 128, .7);
+    padding-left: 47px;
+    border-left: 2px solid rgba(0, 0, 0, .6);
+    margin-top: 37.5px;
+    margin-bottom: 25px;
+}
+body > .container > .mid-shit > .mid-shit_content > .preview > .nike-band > button{
+    width: 120px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    background: rgba(234, 98, 92, 1);
+    margin-top: 25px;
+    cursor: pointer;
+}
+body > .container > .mid-shit > .mid-shit_content > .preview > .nike-band > button:hover{
+    background: rgb(216, 75, 68);
+    transition: .3s;
+}
+body > .container > .mid-shit > .mid-shit_content > .preview > .nike-band > button > span{
+    font-size: 15px;
+    height: 17px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 17px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+body > .container > .footer{
+    width: 100vw;
+    height: 90vh;
+    background: url(../img/runners.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body > .container > .footer > ._footer{
+    width: 67.5%;
+    margin: auto;
+
+}
+body > .container > .footer > ._footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+}
+body > .container > .footer > ._footer  > .footer-content > h1{
+    font-size: 50px;
+    line-height: 60px;
+    max-width: 450px;
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+body > .container > .footer > ._footer  > .footer-content > p{
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0;
+    width: 474px;
+    font-weight: 500;
+    color: rgb(220, 220, 220);
+    padding-left: 47px;
+    border-left: 2px solid rgba(255, 255, 255, 1);
+    margin-top: 55px;
+    margin-bottom: 25px;
+}
+body > .container > .footer > ._footer > .footer-content > button{
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    background: rgba(234, 98, 92, 1);
+    margin-top: 25px;
+    cursor: pointer;
+}
+body > .container > .footer > ._footer > .footer-content > button:hover{
+    background: rgb(216, 75, 68);
+    transition: .3s;
+}
+body > .container > .footer > ._footer > .footer-content > button > span{
+    font-size: 15px;
+    height: 17px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 17px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}

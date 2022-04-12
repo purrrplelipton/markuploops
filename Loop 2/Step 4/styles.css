@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #55557e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > .container{
+    width: 25%;
+    height: 65%;
+    /* background: rgba(0, 0, 0, .1); */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+body > .container > .top{
+    width: 100%;
+    height: 16.7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, .25); */
+}
+body > .container > .top > div{
+    width: 19.75%;
+    height: 77.7777777778%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > .container > .top > div > img{
+    width: 30px;
+    height: auto;
+}
+body > .container > .top > div:nth-child(2), body > .container > .top > div:nth-child(4){
+    width: 17.75%;
+}
+body > .container > .top > div:first-child{
+    border-right: 2px solid #55557e;
+}
+body > .container > .top > div:last-child{
+    border-left: 2px solid #55557e;
+}
+body > .container > .top > div:nth-child(3){
+    height: 100%;
+    width: 25%;
+    background: #252525;
+    box-shadow: 0 0 20px -5px  rgba(0, 0, 0, 1);
+}
+body > .container > .top > div:nth-child(3) > img{
+    width: 40px;
+    height: auto;
+}
+body > .container > .top > div:not(:nth-child(3)) > img{
+    opacity: .6;
+}
+body > .container > .top > div:not(:nth-child(3)):hover > img{
+    opacity: .75;
+}
+body > .container > .top > div:not(:nth-child(3)){
+    background: rgba(0, 0, 0, .3);
+}
+body > .container > .top > div:not(:nth-child(3)):hover{
+    background: rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+body > .container > .bottom > .top{
+    width: 100%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, .2);
+    background-image: url(./img/food.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    overflow: hidden;
+    padding: 30px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+body > .container > .bottom > .top > h1{
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 37px;
+    height: 37px;
+    color: rgba(255, 255, 255, 1);
+}
+body > .container > .bottom > .top > div{
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+body > .container > .bottom > .top > div > img{
+    width: 22px;
+    height: auto;
+}
+body > .container > .bottom > .top > div > p{
+    margin: 0;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    height: 19px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 1);
+    align-self: flex-end;
+}
+body > .container > .bottom{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: rgba(255, 255, 255, 1);
+    margin: auto;
+    bottom: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+body > .container > .bottom > ul{
+    width: 100%;
+    height: 60%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body > .container > .bottom > ul > li{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+body > .container > .bottom > ul > li > div{
+    width: 87.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body > .container > .bottom > ul > li > div > h1{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    color: rgba(0, 0, 0, .4);
+}
+body > .container > .bottom > ul > li:hover > div > h1:nth-child(2){
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 1);
+    transition: .4s;
+}
+body > .container > .bottom > ul > li:nth-child(-n+3){
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}

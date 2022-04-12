@@ -1,0 +1,146 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    background: white;
+    width: 525px;
+    height: 575px;
+    border-radius: 5px;
+    margin: auto;
+    padding: 80px 50px 50px 50px;
+}
+
+.dest{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.border-bottom{
+    display: flex;
+}
+
+h1{
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+    font-family: 'Sigmar One', 'Asset', 'Seymour One', 'Chango', 'Sans Serif';
+    color: #3b8acf;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
+    align-self: center;
+}
+
+hr{
+    width: 40px;
+    height: 10px;
+    background: #d3e6f4;
+    border: none;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.dest-fullname{
+    font-family: 'Oxygen', 'Comic Sans Ms';
+    font-size: 15px;
+    font-weight: 600;
+    color: #b1b3b6;
+    margin: 10px 0 0;
+    height: 15px;
+    line-height: 15px;
+    letter-spacing: 1px;
+}
+
+#amsterdam{
+    text-align: right;
+}
+
+.fgs > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+h3{
+    font-size: 15px;
+    font-family: 'Oxygen', 'Comic Sans Ms';
+    color: #b1b3b6;
+    letter-spacing: 1px;
+    margin: 0;
+    height: 15px;
+    line-height: 15px;
+}
+
+h4{
+    font-size: 20px;
+    font-family: 'Oxygen', 'Comic Sans Ms';
+    margin: 5px 0;
+    height: 20px;
+    line-height: 20px;
+}
+
+.gt, .st{
+    margin-left: 100px;
+}
+
+.fgs{
+    margin-bottom: 30px;
+}
+
+.li_img{
+    display: flex;
+    justify-content: space-between;
+}
+
+.li_img > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h5{
+    font-size: 15px;
+    font-family: 'Oxygen', 'Comic Sans Ms';
+    color: #b1b3b6;
+    letter-spacing: 1px;
+    margin: 0;
+    height: 15px;
+    line-height: 15px; 
+
+}
+
+h6{
+    font-size: 20px;
+    font-family: 'Oxygen', 'Comic Sans Ms';
+    margin: 5px 0 40px;
+    height: 20px;
+    line-height: 20px;
+
+}
+
+.img{
+    margin-top: 20px;
+}
+
+.qr_code{
+    align-self: flex-end;
+}

@@ -1,0 +1,261 @@
+:root{
+    --the-purple: hsl(252, 79%, 53%);
+    --the-pink: hsl(337, 68%, 65%);
+    --btn-red: hsl(6, 78%, 57%);
+}
+
+*::before, *, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: all .3s ease;
+    /* outline: 1px solid red; */
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--the-purple);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 90rem;
+    /* height: 75%; */
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+div.leftSide {
+    width: 47.5%;
+    background-color: var(--the-pink);
+    border-radius: inherit;
+    padding: 2.2rem;
+    position: relative;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .5);
+}
+
+div.leftSide > img {
+    display: block;
+    width: 4rem;
+}
+
+div.leftSide > p {
+    font-size: 29rem;
+    line-height: calc(1em - ((20 / 100) * 1em));
+    text-align: center;
+    color: rgba(255, 255, 255, .25);
+    font-weight: 500;
+    margin: 1.5rem 1.25rem 0;
+    display: inline-block;
+}
+
+div.leftSide > div.leftBottom {
+    margin: 75% 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.leftSide > div.leftBottom > span {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    opacity: .5;
+    border-radius: 50%;
+}
+
+div.leftSide > div.leftBottom > span:hover {
+    opacity: 1;
+}
+
+div.leftSide > div.leftBottom > span:not(:first-of-type, :last-of-type) {
+    margin: 0 1.75rem;
+    opacity: 1;
+}
+
+div.leftSide > div.shoe {
+    position: absolute;
+    left: -25%;
+    bottom: 8%;
+}
+
+div.leftSide > div.shoe > img:first-of-type {
+    display: block;
+}
+
+div.leftSide > div.shoe > img:not(:first-of-type) {
+    position: absolute;
+    background-color: var(--the-purple);
+    border-radius: 50%;
+    width: 3rem;
+    height: auto;
+    padding: .5rem;
+}
+
+div.leftSide > div.shoe > img:not(:first-of-type):hover {
+    filter: hue-rotate(10deg);
+}
+
+div.leftSide > div.shoe > img:nth-last-child(1) {
+    top: 6rem;
+    left: 11rem;
+}
+
+div.leftSide > div.shoe > img:nth-last-child(2) {
+    bottom: 18rem;
+    left: 19rem;
+}
+
+div.leftSide > div.shoe > img:nth-last-child(3) {
+    bottom: 14rem;
+    right: 6rem;
+}
+
+div.rightSide {
+    padding: 0 4rem;
+    /* box-sizing: content-box; */
+}
+
+div.rightSide > p:first-of-type {
+    font-size: 4.25rem;
+    font-weight: 900;
+    /* display: inline-block; */
+    /* margin-top: 7rem; */
+}
+
+div.rightSide > p:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    font-size: 2.25rem;
+    width: max-content;
+    margin: 1.5rem 0 1.6rem;
+}
+
+div.rightSide > p:nth-of-type(2) > span:last-of-type {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: lightgrey;
+    margin-left: 1.25rem;
+}
+
+div.rightSide > p:nth-of-type(3) {
+    display: inline-block;
+    font-size: 1.475rem;
+    line-height: 1.4;
+    margin: 1.25rem 0 3.75rem;
+}
+
+div.rightSide > p:nth-of-type(4) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.85rem;
+    color: lightgrey;
+    margin: 0 0;
+}
+
+div.rightSide > p:nth-of-type(4) > span:first-of-type {
+    margin-right: 4.5rem;
+}
+
+div.rightSide > p:nth-of-type(4) > span:last-of-type {
+    font-size: 2.5rem;
+    font-weight: 300;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2.5rem;
+}
+
+div.rightSide > p:nth-of-type(4) > span:last-of-type > span {
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: .125rem .75rem;
+}
+
+div.rightSide > p:nth-of-type(4) > span:last-of-type > span:last-of-type {
+    margin-right: .75rem;
+}
+
+div.rightSide > p:nth-of-type(4) > span:last-of-type > span > label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 3px solid transparent;
+    border-radius: calc(2 * 1em);
+}
+
+div.rightSide > p:nth-of-type(4) > span:last-of-type > span > input[type=radio] {
+    position: absolute;
+    right: -13px;
+    opacity: 0;
+}
+
+div.rightSide > p:nth-of-type(4) > span:last-of-type > span > input[type=radio]:checked ~ label {
+    border: 3px solid var(--the-pink);
+}
+
+div.rightSide > p:last-of-type {
+    align-items: center;
+    font-size: 1.85rem;
+    color: lightgrey;
+    margin: 2rem 0;
+    display: inline-block;
+}
+
+div.rightSide > p:last-of-type > span:first-of-type {
+    margin-right: 3rem;
+    text-align: center;
+}
+
+div.rightSide > p:last-of-type > span:last-of-type {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: black;
+    padding: 0 1.5rem 0;
+    position: relative;
+}
+
+div.rightSide > p:last-of-type > span:last-of-type::before {
+    content: url(./img/left.svg);
+    position: absolute;
+    left: -10px;
+    bottom: -5px;
+}
+
+div.rightSide > p:last-of-type > span:last-of-type::after {
+    content: url(./img/right.svg);
+    position: absolute;
+    right: -10px;
+    bottom: -5px;
+}
+
+div.rightSide > p:last-of-type > span:last-of-type::after:hover, 
+span:last-of-type::after:hover {
+    filter:opacity(.5);
+}
+
+div.rightSide > button {
+    display: block;
+    border: none;
+    background-color: var(--btn-red);
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.5rem 10rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px var(--btn-red);
+    margin: 3rem 0 0;
+}
+
+div.rightSide > button:hover {
+    transform: translateY(-3px);
+}

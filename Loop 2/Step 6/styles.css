@@ -1,0 +1,143 @@
+:root{
+    --bg-color: hsla(203, 46%, 64%, 1);
+    --container-bg: hsla(0, 0%, 100%, 1);
+    --border-bg: orangered;
+    font-size: 14px;
+}
+*, *::before, *::after{
+    /* box-sizing: border-box; */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* outline: 1px solid red; */
+}
+html > body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+html > body > .container{
+    width: 27%;
+    /* height: 56%; */
+    background-color: var(--container-bg);
+}
+html > body > .container > .top{
+    width: calc(100% - (2rem * 2));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid lightgrey;
+}
+html > body > .container > .top > h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgba(128, 128, 128, 0.8);
+}
+html > body > .container > .center{
+    width: calc(100% - (2rem * 2));
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    margin: auto;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+html > body > .container > .center > div{
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+html > body > .container > .center > div > *{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+html > body > .container > .center > div > h1{
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .6);
+}
+html > body > .container > .center > div > h2{
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    margin-bottom: .75rem;
+}
+html > body > .container > .center > div:nth-child(-n+4) > h2:nth-child(2){
+    opacity: .2;
+}
+html > body > .container > .center > .thu > h2:nth-child(3){
+    background-color: var(--border-bg);
+    color: var(--container-bg);
+}
+html > body > .container > .center > .tue > h2:nth-child(5), html > body > .container > .center > .sat > h2:nth-child(4){
+    border: 2px solid var(--color);
+}
+html > body > .container > .center > .tue > h2:nth-child(5)::after, html > body > .container > .center > .sat > h2:nth-child(4)::after{
+    content: '6';
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: var(--color);
+    font-size: .9rem;
+    /* text-align: center; */
+    color: var(--container-bg);
+    position: absolute;
+    top: -.3rem;
+    right: -.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html > body > .container > .bottom{
+    width: calc(100% - (2rem * 2));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-top: 1px solid lightgrey;
+}
+html > body > .container > .bottom > h1{
+    font-size: 1.2rem;
+}
+html > body > .container > .bottom > div{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--border-bg);
+    border-color: var(--border-bg) mediumorchid;
+    border-radius: 50%;
+}
+html > body > .container > .bottom > .add{
+    cursor: pointer;
+}
+html > body > .container > .bottom > .add:hover > h1{
+    transform: rotate(360deg);
+    transition: 750ms;
+}
+html > body > .container > .bottom > .add > h1{
+    font-size: 1.2rem;
+}
+html > body > .container > .bottom > h1 > sup{
+    font-size: .7rem;
+    font-weight: 700;
+}

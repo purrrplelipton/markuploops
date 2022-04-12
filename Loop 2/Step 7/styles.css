@@ -1,0 +1,219 @@
+:root{
+    --body-bg: hsl(187deg 96% 89%);
+    --container-bg: hsl(0deg, 0%, 100%);
+    --button-color: rgba(105, 167, 150, .85);
+    --button-color-on-hover: rgba(105, 167, 150, 1);
+    font-size: 14px;
+}
+*::before, *, *::after{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    transition: all .3s ease;
+    /* box-sizing: border-box; */
+    /* outline: 1px solid red; */
+}
+html > body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--body-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html > body > .container{
+    width: 70%;
+    height: 80%;
+    background-color: var(--container-bg);
+    display: flex;
+}
+html > body > .container > .left{
+    width: 45%;
+    height: 100%;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .3);
+    background-blend-mode: darken;
+    color: var(--container-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html > body > .container > .left > .content{
+    width: max-content;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+html > body > .container > .left > .content > h1{
+    font-size: 3rem;
+    line-height: 3rem;
+    height: 3rem;
+    font-weight: 500;
+}
+html > body > .container > .left > .content > h2{
+    /* width: 107.5%; */
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+html > body > .container > .left > .content > button{
+    width: 60%;
+    height: 5rem;
+    background-color: var(--button-color);
+    color: var(--container-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+html > body > .container > .left > .content > button:hover{
+    background-color: var(--button-color-on-hover);
+}
+html > body > .container > .left > .content > button > .container{
+    width: 65%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+html > body > .container > .left > .content > button > .container > img{
+    width: 2.5rem;
+    height: auto;
+}
+html > body > .container > .left > .content > button > .container > h1{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 400;
+}
+html > body > .container > .right{
+    width: 55%;
+    height: 100%;
+    padding: 2rem 4rem 4rem;
+    box-sizing: border-box;
+}
+html > body > .container > .right > .content{
+    width: 100%;
+    height: 100%;
+}
+html > body > .container > .right > .content > .heading{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+html > body > .container > .right > .content > .heading > h1{
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.5rem;
+}
+html > body > .container > .right > .content > .heading > img{
+    width: 2.5rem;
+    height: auto;
+}
+html > body > .container > .right > .content > .sub-heading{
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+html > body > .container > .right > .content > .sub-heading > .years{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+html > body > .container > .right > .content > .sub-heading > .years::after{
+    content: '';
+    height: 2rem;
+    position: absolute;
+    right: -.15rem;
+    top: 1.4rem;
+    box-shadow: -.5rem 0 .5rem .5rem  white;
+    z-index: 1;
+}
+html > body > .container > .right > .content > .sub-heading > .years > h1{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-right: 1.5rem;
+}
+html > body > .container > .right > .content > .sub-heading > .years > h1:not(:first-child){
+    opacity: .3;
+}
+html > body > .container > .right > .content > .sub-heading > .years > h1:not(:first-child):hover{
+    cursor: pointer;
+    opacity: 1;
+}
+html > body > .container > .right > .content > .sub-heading > .years{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+html > body > .container > .right > .content > ul{
+    width: 100%;
+    height: 80%;
+    list-style-type: none;
+    padding: 0;
+}
+html > body > .container > .right > .content > ul > li > div > img{
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1.75rem;
+}
+html > body > .container > .right > .content > ul > li{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+html > body > .container > .right > .content > ul > li > .left{
+    display: flex;
+    align-items: center;
+}
+html > body > .container > .right > .content > ul > li > .left > h1{
+    width: 82.5%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    opacity: .8;
+}
+html > body > .container > .right > .content > ul > li > .right{
+    display: flex;
+    align-items: center;
+}
+html > body > .container > .right > .content > ul > li > .right > h1{
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 3.4rem;
+    margin-right: 1rem;
+}
+html > body > .container > .right > .content > ul > li > div > div{
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: right;
+}
+html > body > .container > .right > .content > ul > li > div > div > h1:first-child{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+html > body > .container > .right > .content > ul > li > div > div > h1:last-child{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+

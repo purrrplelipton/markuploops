@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body{
+    background: #f7cd75;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+body > .container{
+    position: relative;
+    width: 55%;
+    height: 65%;
+    background: white;
+    overflow: hidden;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 60px 45px 50px 20.7%;
+}
+body > .container > .left-shit{
+    position: absolute;
+    width: 37.5%;
+    height: 100%;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 47.5px 50px;
+    top: 0;
+    left: 0;
+    overflow-y: overlay;
+}
+body > .container > .left-shit > .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+body > .container > .left-shit > .heading > h1{
+    font-size: 30px;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+}
+body > .container > .left-shit > .heading > img{
+    width: 30px;
+    height: 30px;
+}
+body > .container > .left-shit > .cards{
+    margin-top: 50px;
+}
+body > .container > .left-shit > .cards > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body > .container > .left-shit > .cards > ul > .maestro{
+    margin: 0;
+    margin-bottom: 25px;
+}
+body > .container > .left-shit > .cards > ul > li{
+    width: 100%;
+    height: 155px;
+    background: white;
+    margin-bottom: 50px ;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, .25);
+    padding-left: 12px;
+}
+body > .container > .left-shit > .cards > ul > li:hover{
+    border: 2px solid rgba(106, 90, 205, .65);
+    transition: .4s;
+    cursor: pointer;
+}
+body > .container > .left-shit > .cards > ul > li > img{
+    width: 85px;
+    margin: 12px 0;
+}
+body > .container > .left-shit > .cards > ul > li > .sum-shit{
+    color: rgba(0, 0, 0, .65);
+}
+body > .container > .left-shit > .cards > ul > li > .sum-shit > h2{
+    font-size: 20px;
+    line-height: 22px;
+    height: 22px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+body > .container > .left-shit > .cards > ul > li > .sum-shit > h3{
+    font-size: 15px;
+    line-height: 17px;
+    height: 17;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 10px;
+}
+/*scrollbar tings*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 2px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, .8);
+    border-radius: 5px;
+  }
+  body > .container > .left-shit::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, .8);
+    visibility:hidden;
+}
+body > .container > .left-shit:hover::-webkit-scrollbar-thumb {
+    visibility:visible;
+}
+body > .container > .right-shit::-webkit-scrollbar-thumb {
+    visibility: hidden;
+}
+body > .container > .right-shit:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+/*scrollbar tings ended*/
+body > .container > .right-shit{
+    margin-top: 0px;
+    margin-left: 60px;
+    height: 100%;
+    overflow-y: auto;
+}
+body > .container > .right-shit > ._header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+body > .container > .right-shit > ._header > .bal{
+    font-size: 35px;
+    height: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    margin: 0;
+}
+body > .container > .right-shit > ._header > .total{
+    font-size: 35px;
+    height: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+body > .container > .right-shit > ._header > .total > sup{
+    font-size: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+hr{
+    background: rgba(0, 0, 0, .25);
+    border: none;
+    width: 99%;
+    height: 2px;
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+body > .container > .right-shit > .items{
+    margin-top: 25px;
+    margin-right: 5px;
+}
+body > .container > .right-shit > .items > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+body > .container > .right-shit > .items > ul > li{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+body > .container > .right-shit > .items > ul > li > .img_txt > .add_remove{
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(128, 128, 128, .9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45px;
+}
+body > .container > .right-shit > .items > ul > li > .img_txt > .add_remove:hover{
+    border: 1px solid rgba(0, 0, 0, .9);
+    transition: .4s;
+    cursor: pointer;
+}
+body > .container > .right-shit > .items > ul > li > .img_txt > .add_remove > img{
+    width: 25px;
+}
+body > .container > .right-shit > .items > ul > li > .img_txt > .description > h1{
+    font-size: 26px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 7.5px;
+    font-weight: 900;
+}
+body > .container > .right-shit > .items > ul > li > .img_txt > .description{
+    left: 0;
+}
+body > .container > .right-shit > .items > ul > li > .img_txt > .description > h2{
+    font-size: 17px;
+    height: 19px;
+    line-height: 19px;
+    margin: 0;
+    margin-top: 7.5px;
+    color: rgba(128, 128, 128, .9);
+    font-weight: 500;
+}
+body > .container > .right-shit > .items > ul > li > .img_txt{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+body > .container > .right-shit > .items > ul > li > .total > h1{
+    font-size: 21px;
+    font-weight: 900;
+    height: 23px;
+    line-height: 23px;
+    margin: 0;
+    color: rgba(106, 90, 205, .7);
+}
+#add > h1{
+    color: rgb(104, 228, 21);
+}
+body > .container > .right-shit > .items > ul > li > .total > h1 > sup{
+    font-size: 15px;
+    height: 15px;
+    line-height: 15px;
+    margin: 0;
+}

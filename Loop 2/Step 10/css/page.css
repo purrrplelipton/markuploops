@@ -1,0 +1,282 @@
+:root{
+    --the-purple: rgba(50, 49, 243, 1);
+}
+body > .page{
+    width: 70%;
+    height: auto;
+    margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+body > .page > .left{
+    width: 20%;
+    /* height: 74%; */
+    height: 51.3rem;
+    padding: 2rem;
+    background: white;
+    outline: 1px solid var(--brdr-clr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body > .page > .left > img{
+    width: 130px;
+    height: auto;
+    border-radius: 100%;
+    margin: 0 0 .5rem 0;
+}
+body > .page > .left > p:nth-of-type(1){
+    margin: 1rem auto .1rem auto;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+body > .page > .left > p:nth-of-type(2){
+    margin: .4rem auto .1rem auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+body > .page > .left > p:nth-of-type(3){
+    margin: .4rem auto .75rem auto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: grey;
+}
+body > .page > .left > button{
+    width: 100%;
+    height: 3.25rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+body > .page > .left > button > p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    position: relative;
+}
+body > .page > .left > button:nth-of-type(1){
+    margin: .25rem auto .5rem auto;
+    background: var(--btn-blue-light);
+    color: white;
+}
+body > .page > .left > button:nth-of-type(1):hover{
+    background: var(--btn-blue);
+
+}
+body > .page > .left > button:nth-of-type(2){
+    margin: .5rem auto 1rem auto;
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--btn-blue);
+    color: var(--btn-blue);
+    position: relative;
+}
+body > .page > .left > button:nth-of-type(2):hover{
+    background-color: var(--btn-blue-very-light);
+}
+body > .page > .left > button:nth-of-type(2) > p::after{
+    content: '';
+    /* position: absolute; */
+    width: .5rem;
+    height: .5rem;
+    transform: rotate(45deg);
+    border: 1px solid;
+    border-color: transparent var(--btn-blue) var(--btn-blue) transparent;
+    margin-left: .75rem;
+    margin-top: -.25rem;
+}
+body > .page > .left > .con_fol{
+    width: calc(100% + 4rem);
+    display: flex;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+body > .page > .left > .con_fol > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+body > .page > .left > .con_fol > div > p:first-child{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+body > .page > .left > .con_fol > div > p:last-child{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: grey;
+}
+body > .page > .left > .con_fol > .connections{
+    border-right: 1px solid lightgrey;
+}
+body > .page > .left > .con_fol > .connections > p:last-child{
+    width: 6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+body > .page > .left > .links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin: 1rem auto 1rem auto; */
+    padding: .75rem 0 1.5rem;
+}
+body > .page > .left > .links > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 .5rem 0;
+}
+body > .page > .left > .links > .firstLink{
+    margin: 0 0 1rem 0;
+}
+body > .page > .left > .links > div > img{
+    width: 24px;
+    height: auto;
+    /* margin: 0 .5rem 0 0; */
+}
+body > .page > .left > .links > div > p{
+    width: 13rem;
+    font-size: 1.2rem;
+    /* line-height: 1.2rem; */
+    /* width: max-content;     */
+    /* height: 1.2rem; */
+    font-weight: 400;
+    color: grey;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+body > .page > .left > .links > div:hover > p{
+    cursor: pointer;
+    text-decoration: underline;
+    /* border-bottom: 1px solid grey; */
+}
+body > .page > .left > .export{
+    width: calc(100% + 4rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    padding: 2rem 2rem 0;
+}
+body > .page > .left > .export > img{
+    width: 24px;
+    height: auto;
+    /* margin: 0 .5rem 0 0; */
+}
+body > .page > .left > .export > p{
+    width: 13rem;
+    font-size: 1.2rem;
+    /* line-height: 1.2rem; */
+    /* width: max-content; */
+    /* height: 1.2rem; */
+    font-weight: 400;
+    color: grey;
+}
+body > .page > .left > .export:hover > p{
+    cursor: pointer;
+    text-decoration: underline;
+    /* border-bottom: 1px solid grey; */
+}
+body > .page > .right{
+    width: calc(16.5% - 2rem);
+}
+body > .page > .right > p{
+    width: 100%;
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin: 0 0 1.2rem 0;
+}
+body > .page > .right > div{
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1.5rem 0;
+}
+body > .page > .right > div > img{
+    width: 53px;
+    height: auto;
+    border-radius: 100%;
+}
+body > .page > .right > div > .text{
+    width: 66%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+body > .page > .right > div > .text > p:first-child{
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+body > .page > .right > div > .text > p:last-child{
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: grey;
+}
+body > .page > .right > div:nth-child(4){
+    margin: 0 0 4.25rem 0;
+}
+body > .page > .right > .bigPic{
+    width: 100%;
+    /* height: ; */
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 0 0;
+}
+body > .page > .right > .bigPic > .imgContainer{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 0 .8rem 0;
+}
+body > .page > .right > .bigPic > .imgContainer > .btns{
+    width: .8rem;
+    height: .8rem;
+    position: absolute;
+    border: 2px solid;
+    border-color: transparent transparent black black;
+    transform: rotate(45deg);
+    bottom: 3rem;
+}
+body > .page > .right > .bigPic > .imgContainer > .left{
+    left: 1rem;
+}
+body > .page > .right > .bigPic > .imgContainer > .right{
+    right: 1rem;
+    border-color: black black transparent transparent;
+}
+body > .page > .right > .bigPic > .imgContainer > img{
+    width: 135px;
+    height: auto;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 100%;
+}
+body > .page > .right > .bigPic > p:nth-of-type(1){
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 0 0 .25rem 0;
+}
+body > .page > .right > .bigPic > p:nth-of-type(2){
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: grey;
+}

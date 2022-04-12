@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #de8a89;
+    font-family: 'Roboto' !important;
+    overflow: hidden;
+}
+body > .heading{
+    width: 60%;
+    height: 160px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+body > .heading > .bold-shit{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+body > .heading > .bold-shit > h1{
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 84px;
+    margin: 0;
+    margin-right: 78px;
+    color: rgba(255, 255, 255, 1);
+}
+
+body > .heading > .bold-shit > h1:nth-child(n+2){
+    color: rgba(255, 255, 255, .5);
+}
+body > .heading > .bold-shit > h1:nth-child(n+2):hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, .75);
+}
+body > .heading > p{
+    width: 70%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 0;
+    color: rgba(245, 245, 245, 1);
+}
+body > .procedures{
+    width: 60%;
+    margin: auto;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 1px 5px 30px -5px;
+    position: relative;
+}
+body > .procedures > div{
+    width: 400px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body > .procedures > div:nth-child(2){
+    background: #3e3c3d;
+    position: relative;
+}
+body > .procedures > div > .pee{
+    align-self: flex-start;
+    margin-left: 20%;
+}
+body > .procedures > div > .pee > p{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+    color: #de8a89;
+}
+body > .procedures > div > .pee > h1{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0;
+    margin-top: 10px;
+    color: rgb(250, 250, 250);
+}
+button{
+    position: absolute;
+    width: 85%;
+    height: 20%;
+    background: #131313;
+    border: none;
+    border-radius: 5px;
+    bottom: -10%;
+    cursor: pointer;
+}
+button:hover{
+    transition: .3s;
+    bottom: -7.5%;
+}
+button > h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(245, 245, 245);
+}
+body > .procedures > div:nth-child(3){
+    background: #353334;
+}
+body > .procedures > div:nth-child(4){
+    background: #201e1f;
+}
+body > .procedures > div:first-child{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background:rgba(255, 255, 255, .3);
+    left: -130px;
+    top: 0;
+    cursor: pointer;
+}
+body > .procedures > div:first-child:hover{
+    background:rgba(255, 255, 255, .5);
+}
+body > .procedures > div:first-child > .backwards{
+    width: 20px;
+    height: 20px;
+    background:rgba(0, 0, 0, 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > .procedures > div:first-child > .backwards::before{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+    border-color: transparent rgba(0, 0, 0, .5) transparent transparent;
+    margin-left: -50%;
+
+}
+body > .procedures > div:last-child{
+    width: 130px;
+    height: 130px;
+    background:rgba(255, 255, 255, .3);
+    position: absolute;
+    right: -130px;
+    top: 0;
+    cursor: pointer;
+}
+body > .procedures > div:last-child:hover{
+    background: rgba(255, 255, 255, .5);
+}
+body > .procedures > div:last-child > .forward{
+    width: 20px;
+    height: 20px;
+    background:rgba(0, 0, 0, 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > .procedures > div:last-child > .forward::after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+    border-color: transparent transparent transparent rgba(0, 0, 0, .5);
+    margin-right: -50%;
+}
