@@ -245,7 +245,7 @@ div.photos > div > span > svg {
 }
 
 div.photos > div:hover > span {
-  opacity: .5;
+  opacity: .25;
 }
 
 div.photos > div > span:hover {
