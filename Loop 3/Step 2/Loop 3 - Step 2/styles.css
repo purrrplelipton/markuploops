@@ -8,6 +8,7 @@
   --bg-color: hsla(223, 26%, 22%, 1);
   --the-blu: hsla(224, 90%, 68%, 1);
   --pad: 2.55rem;
+  --gap: 1.5rem;
 }
 
 *::before, *, *::after {
@@ -39,7 +40,6 @@ div.wrapper > nav.left-nav {
   position: relative;
   flex-direction: column;
   align-items: flex-start;
-  /* outline: 1px solid red; */
 }
 
 nav.left-nav::after {
@@ -55,6 +55,7 @@ nav.left-nav::after {
 nav.left-nav > span {
   width: 80px;
   height: 40px;
+  position: relative;
 }
 
 nav.left-nav > span > svg {
@@ -73,8 +74,15 @@ nav.left-nav > span:not(:first-of-type) {
   padding-right: 2.5rem;
 }
 
-nav.left-nav > span:nth-last-of-type(2) {
-  border-right: 3px solid var(--the-blu);
+nav.left-nav > span:nth-last-of-type(2)::after {
+  content: "";
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  background-color: var(--the-blu);
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 nav.left-nav > span:first-of-type > svg,
@@ -85,15 +93,38 @@ nav.left-nav > span:nth-last-of-type(2) > svg {
 nav.left-nav > span:not(
   :first-of-type,
   :nth-last-of-type(2)
-):hover {
-  cursor: pointer; 
-  border-right: 3px solid var(--the-blu);
+) {
+  cursor: pointer;
+}
+
+nav.left-nav > span:not(
+  :first-of-type,
+  :nth-last-of-type(2)
+)::after {
+  content: "";
+  width: 3px;
+  height: 0;
+  position: absolute;
+  background-color: var(--the-blu);
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  transition: top .15s, height .15s;
+}
+
+nav.left-nav > span:not(
+  :first-of-type,
+  :nth-last-of-type(2)
+):hover::after {
+  height: 100%;
+  top: 0;
 }
 
 nav.left-nav > span:not(
   :first-of-type,
   :nth-last-of-type(2)
 ):hover > svg {
+  transition: .3s ease;
   fill: var(--the-blu);
 }
 
@@ -116,13 +147,15 @@ div.wrapper > div.right-content {
   /* outline: 1px solid red; */
   width: 100%;
   padding: 0 1rem 0 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 div.right-content > header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 2.125rem;
 }
 
 header > div > p {
@@ -138,7 +171,7 @@ header > div > h1 {
 }
 
 header > button {
-  border: 1px solid var(--the-blu);
+  border: 1px solid hsla(224, 90%, 68%, .5);
   outline: none;
   background-color: white;
   color: var(--the-blu);
@@ -147,23 +180,74 @@ header > button {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
+  transition: border .2s ease;
+}
+
+header > button:hover {
+  cursor: pointer;
+  border: 1px solid var(--the-blu);
 }
 
 div.photos {
+  height: 76.5%;
   display: grid;
-  /* grid-template-columns: repeat(auto-fit(minmax(256px, 1fr))); */
+  grid-gap: var(--gap);
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 280px;
-  /* grid-auto-flow: dense; */
-  grid-gap: 1.5rem;
+  /* grid-auto-rows: 280px; */
+  grid-template-rows: calc((100%) / 2);
+  /* grid-template-rows: repeat(2, minmax(280px, 1fr)); */
 }
 
-div.photos > div > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+div.photos > div {
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: hsla(223, 26%, 22%, .5);
+  background-image: var(--bckgrnd-img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: box-shadow .15s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 div.photos > div.img-2 {
   grid-column: span 2;
+}
+
+
+div.photos > div:hover {
+  background-blend-mode: darken;
+  box-shadow: 0 4px 14px -2px var(--the-blu);
+}
+
+div.photos > div > span {
+  width: 38px;
+  height: 38px;
+  opacity: 0;
+  transition: opacity .15s linear;
+}
+
+div.photos > div > span:first-of-type {
+  margin-right: 16px;
+}
+
+div.photos > div > span:last-of-type {
+  margin-left: 16px;
+}
+
+div.photos > div > span > svg {
+  width: 100%;
+  height: 100%;
+  fill: rgb(225, 225, 225);
+}
+
+div.photos > div:hover > span {
+  opacity: .5;
+}
+
+div.photos > div > span:hover {
+  opacity: 1;
 }
