@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Loop 3 - Step 2</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Loop 3 - Step 2</title> 
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <!-- We prepared an svg sprite for you here instead of image icons -->
-
   <svg class="icon-sprite">
     <symbol id="logo" viewBox="0 0 24 24" width="100%" height="100%">
       <path d="M3 4l9 16 9-16H3zm3.38 2h11.25L12 16 6.38 6z"></path>
@@ -32,5 +32,61 @@
       <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
     </symbol>
   </svg>
+  <div class="wrapper">
+    <nav class="left-nav">
+      <span>
+        <svg class="logo">
+          <use xlink:href="#logo"/>
+        </svg>
+      </span>
+      <span>
+        <svg class="search">
+          <use xlink:href="#search"/>
+        </svg>
+      </span>
+      <span>
+        <svg class="favorite">
+          <use xlink:href="#favorite"/>
+        </svg>
+      </span>
+      <span>
+        <svg class="grid">
+          <use xlink:href="#grid"/>
+        </svg>
+      </span>
+      <span>
+        <svg class="layers">
+          <use xlink:href="#layers"/>
+        </svg>
+      </span>
+      <img src="./img/avatar.jpg" />
+    </nav>
+    <div class="right-content">
+      <header>
+        <div>
+          <p>29.309 images</p>
+          <h1>City</h1>
+        </div>
+        <button>more</button>
+      </header>
+      <div class="photos">
+        <div class="img-1">
+          <img src="./img/1.jpg"/>
+        </div>
+        <div class="img-2">
+          <img src="./img/2.jpg"/>
+        </div>
+        <div class="img-3">
+          <img src="./img/3.jpg"/>
+        </div>
+        <div class="img-4">
+          <img src="./img/4.jpg"/>
+        </div>
+        <div class="img-5">
+          <img src="./img/5.jpg"/>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
